@@ -1,0 +1,19 @@
+import 'package:final_flutter_app/HomePage.dart';
+import 'package:final_flutter_app/login.dart';
+import 'package:flutter/material.dart';
+
+import 'register.dart';
+	
+
+	void main() {
+	  runApp(MaterialApp(
+	    debugShowCheckedModeBanner: false,
+	    home: MyLogin(),
+	    routes: {
+	      'register': (context) => MyRegister(),
+	      'login': (context) => MyLogin(),
+        'homepage':(context) => HomePage(),
+       
+	    },
+	  ));
+	}
